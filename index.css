@@ -1,4 +1,8 @@
 body{
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     background-color: #1C1C1C;
     display: flex;
     justify-content: center;
@@ -60,4 +64,6 @@ hr{
     width: 191px;
     height: 42px;
     border-style: none;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
