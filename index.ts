@@ -6,3 +6,21 @@ const characters: Array<string> = ["A","B","C","D","E","F","G","H","I",
     "7", "8", "9","~","`","!","@","#","$","%","^","&","*",
     "(",")","_","-","+","=","{","[","}","]",",","|",":",
     ";","<",">",".","?","/"];
+
+const password1 = document.getElementById('pass1') as HTMLElement
+const password2 = document.getElementById('pass2') as HTMLElement
+let passLength = 15
+
+const generatePassword = (): string =>{
+    let password: string = ''
+    for (let i: number = 0; i<passLength; i++){
+        password += characters[Math.floor(Math.random()*characters.length)]
+    }
+    return password
+}
+
+
+const generatePasswords = (): void => {
+    password1!.textContent = generatePassword()
+    password2!.textContent = generatePassword()
+}
