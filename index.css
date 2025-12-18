@@ -1,0 +1,63 @@
+body{
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#container{
+    margin: 1% 0px;
+    background-color: #1F2937;
+    border-radius: 5px;
+    padding: 50px;
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+p{
+    color: #D5D4D8;
+    margin-top: 0px;
+}
+
+span{
+    color: #10B981;
+}
+
+#generate{
+    background-color: #10B981;
+    color: white;
+    border-style: none;
+    padding: 10px 15px;
+    margin-top: 45px;
+    border-radius: 5px;
+    width: 191px;
+    height: 42px;
+}
+
+hr{
+    margin-top: 45px;
+    background-color: #2F3E53;
+    color: #2F3E53;
+    height: 1px;
+    border-style: none;
+}
+
+#passwords{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.passwords {
+    margin-top: 70px;
+    background-color: #273549;
+    color: #55F991;
+    width: 191px;
+    height: 42px;
+    border-style: none;
+}
