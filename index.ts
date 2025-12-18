@@ -24,3 +24,18 @@ const generatePasswords = (): void => {
     password1!.textContent = generatePassword()
     password2!.textContent = generatePassword()
 }
+
+
+const copyText = (): void => {
+    var copyText: HTMLElement
+    if (event?.target.id === 'pass1'){
+        copyText = document.getElementById('pass1') as HTMLElement
+    }
+    else {
+        copyText = document.getElementById('pass2') as HTMLElement
+    }
+
+    navigator.clipboard.writeText(copyText.textContent)
+
+    alert("Copied text: " + copyText.textContent)
+}
